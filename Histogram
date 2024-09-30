@@ -4,8 +4,10 @@ def q00():
   path = "C:\\Users\\name\\Downloads\\data.csv" 
   df = pd.read_csv(path)
 
+  # Create a variable for 
   # Create the histogram with any bins
-  plt.hist(df, bins=10) #bins คือความห่างของกราฟ
+  # bins is distance between each graph
+  plt.hist(df, bins=10) 
 
   # Add a title and labels
   plt.title('Histogram of ???')
