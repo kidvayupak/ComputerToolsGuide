@@ -1,6 +1,11 @@
 #Q01
 
-Number of transactions by states
-- Bars()
-- Size 20.4 x 6.4
+Output:
+mychart01.png
+
+Requirements
+- Number of transactions by states
+- bar()
+- size 20.4 x 6.4
+
 
