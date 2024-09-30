@@ -1,0 +1,11 @@
+Output:
+mychart03.png
+
+Requirements
+- Total spending by cardType
+- bar
+- size 10.4 x 6.4
+- Decoration
+
+Question:
+- Sum of spending by card type, using bar with size. Decorate with color?
