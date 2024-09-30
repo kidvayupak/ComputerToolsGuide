@@ -1,0 +1,11 @@
+Output:
+mychart02.png
+
+Requirements
+- Average VISA transaction amounts by shipping country
+- barh()
+- size 6.4 x 50.4
+- Please do not forget uppercase shipping country letters
+
+#Question:
+- Average Transaction Amounts by shipping country using Bar horizontal with size
