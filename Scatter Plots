@@ -1,0 +1,9 @@
+# Scatter Plot
+# Size and Color
+
+def q00():
+  x = np.random.rand(30)
+  y = np.random.rand(30)
+  z = np.random.rand(30)
+  colours = np.random.choice(["blue, "black", "red"], 30)
+  plt.scatter(x, y, marker="o", color = colours, s = z*100)
