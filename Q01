@@ -20,7 +20,7 @@ def q01():
     # คลีนข้อมูล
     df2 = df[df['shippingCountry'].notnull()]                                  # กรองข้อมูลที่ไม่มีค่า null ในคอลัมน์ shippingCountry
     df3 = df2.query("shippingCountry in ('US')")                               # กรองข้อมูลที่มีค่า US ในคอลัมน์ shippingCountry
-    # df3 = df2.quesry('shippingCountry == "US"')
+    # df3 = df2.query('shippingCountry == "US"')
 
     # df3['shippingState'] = df3['shippingState'].fillna('No data') OR         # แทนที่ค่า null ในคอลัมน์ shippingCountry
     # df3['shippingState'] = df3['shippingState'].fillna('N/A')
