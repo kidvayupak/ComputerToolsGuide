@@ -1,0 +1,8 @@
+def case():
+  x = np.arrange(-10, 11) # Base on requirement given
+  y = x ** 2 # Base on requirement given
+  plt.plot(x,y)
+  plt.show()
+
+if __name__ == '__main__':
+  case():
