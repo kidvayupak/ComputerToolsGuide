@@ -20,6 +20,7 @@ def q01():
     # คลีนข้อมูล
     df2 = df[df['shippingCountry'].notnull()]                                  # กรองข้อมูลที่ไม่มีค่า null ในคอลัมน์ shippingCountry
     df3 = df2.query("shippingCountry in ('US')")                               # กรองข้อมูลที่มีค่า US ในคอลัมน์ shippingCountry
+    # df3 = df2.quesry('shippingCountry == "US"')
 
     # df3['shippingState'] = df3['shippingState'].fillna('No data') OR         # แทนที่ค่า null ในคอลัมน์ shippingCountry
     # df3['shippingState'] = df3['shippingState'].fillna('N/A')
@@ -36,9 +37,9 @@ def q01():
     num_transactions_state = []                                                  # สร้างลิสต์ num_transactions_state ที่ว่างเปล่า
     for x in state_list2:                                                        # วนซ้ำตามรายการที่ไม่ซ้ำกันใน state_list2
         df_state3 = df3[df3['shippingState'] == x]                               # กรองข้อมูลใน df3 ที่มีค่า shippingState เท่ากับ x
-        num_transactions = len(df_state3)                                        # นับจำนวนแถวใน df_state3 
-        # print("Transactions in " + x + " is " + str(num_transactions) + ".")   # แสดงข้อความที่แสดงจำนวนธุรกรรม
-        num_transactions_state.append(num_transactions)                          # เพิ่มจำนวนธุรกรรมเข้าไปใน num_transactions_state
+    num_transactions = len(df_state3)                                        # นับจำนวนแถวใน df_state3 
+    # print("Transactions in " + x + " is " + str(num_transactions) + ".")   # แสดงข้อความที่แสดงจำนวนธุรกรรม
+    num_transactions_state.append(num_transactions)                          # เพิ่มจำนวนธุรกรรมเข้าไปใน num_transactions_state
 
     print(state_list2)                                                           # แสดงค่าใน state_list2
     print(num_transactions_state)                                                # แสดงค่าใน num_transactions_state
