@@ -1,0 +1,16 @@
+# Histogram
+
+def q00():
+  path = "C:\\Users\\name\\Downloads\\data.csv" 
+  df = pd.read_csv(path)
+
+  # Create the histogram with any bins
+  plt.hist(df, bins=10) #bins คือความห่างของกราฟ
+
+  # Add a title and labels
+  plt.title('Histogram of ???')
+  plt.xlabel('Value')
+  plt.ylabel('Frequency')
+  
+  # Show the histogram
+  plt.show()
